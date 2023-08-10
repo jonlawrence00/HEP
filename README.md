@@ -12,8 +12,10 @@ step #2: run Read_Root.ipynb
         - "eventsWithReg_FULL_PT2_EB.pkl"
         - "eventsWithReg_FULL_PT3_EB.pkl"
 
-step #3: run Training_Models.ipynb with FULL PT3 files only:
-    Produces:
+
+step #3: run Training_Models.ipynb:
+    Produces: models and testing data for FULL_PT1,2,3 and ZS
+    Example for FULL_PT3:
       'XGBR_model_FULL_PT3_tgt.sav'
       'ETR_model_FULL_PT3_tgt.sav'
       'NSVR_model_FULL_PT3_tgt.sav'
@@ -27,5 +29,6 @@ step #3: run Training_Models.ipynb with FULL PT3 files only:
       "ytest_FULL_PT3_tgt.pkl"
       "events_FULL_PT3_test_tgt.pkl"
 
-step #4: run Fit_Plot.ipynb with FULL PT3 files only
+step #4: run Fit_Plot.ipynb 
+note: currently Fit_plot.ipynb only imports FULL_PT3 data. currently working to allow user to parse what data they want Fit_Plot.ipynb to use
     Produces: Plots and fits
